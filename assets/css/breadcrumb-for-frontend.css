@@ -1,0 +1,67 @@
+/**
+ * Plugin Name: Breadcrumb For Frontend
+ * Plugin URI: https://wordpress.org/plugins/breadcrumb-for-frontend/
+ * Description: Breadcrumb For Frontend plugin is used for displaying the breadcrumb for web pages to easily navigate on pages
+ * Version: 1.0
+ * Author: Gautam Buddha
+ * Author URI: https://webdevelopmentsolutions.in/author
+ * License: GPLv2 or later
+ * Text Domain: breadcrumb-for-frontend
+ *
+ * @copyright Copyright (c) 2018, Gautam Buddha
+ * @link      https://wordpress.org/plugins/breadcrumb-for-frontend/
+ * @license   GPLv2 or later
+ */ 
+
+@charset "utf-8";
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.breadcrumb-for-frontend:after,.breadcrumb-for-frontend:before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.breadcrumb-for-frontend a{
+    color:#db7093;
+    text-decoration:none
+}
+.breadcrumb-for-frontend a:focus,.breadcrumb-for-frontend a:hover, .breadcrumb-for-frontend .current:hover{
+    color: #fff;
+	text-decoration: underline;
+	background-color: #db7093;
+	padding: 3px 10px 6px 10px;
+	border-radius: 2px;
+}
+.breadcrumb-for-frontend a:focus{
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px
+}
+.breadcrumb-for-frontend{
+    padding:8px 15px;
+    margin-bottom:20px;
+    list-style:none;
+    background-color:#fff;
+    border-radius:4px
+}
+.breadcrumb-for-frontend>li{
+    display:inline-block
+}
+.breadcrumb-for-frontend>li+li:before{
+    padding:0 5px;
+    color:#ccc;
+    content:"/\00a0"
+}
+.breadcrumb-for-frontend>.active{
+    color:#777
+}
+.breadcrumb-for-frontend .current{
+	font-weight:bold;
+	color:#db7093;
+}
+
